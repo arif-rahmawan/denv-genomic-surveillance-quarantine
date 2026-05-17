@@ -1,0 +1,31 @@
+# requirements.txt
+# In Silico Genomic Mutation Analysis of Dengue Virus (DENV)
+# Arif Rahmawan | Poltekkes Kemenkes Bandung | 2025
+#
+# Install: pip install -r requirements.txt
+# Python version: 3.10+ recommended (tested on 3.13.7)
+
+# ── CORE BIOINFORMATICS ───────────────────────────────────────────────────────
+biopython>=1.81           # Sequence parsing, translation, MSA handling
+numpy>=1.24.0             # Numerical arrays, frequency matrices
+pandas>=2.0.0             # Tabular data, metadata processing
+scipy>=1.10.0             # Fisher's exact test, statistical analysis
+
+# ── VISUALIZATION ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0         # Plotting, heatmaps, mutation frequency charts
+seaborn>=0.12.0           # Statistical visualization
+plotly>=5.15.0            # Interactive charts (optional)
+
+# ── SEQUENCE ANALYSIS ─────────────────────────────────────────────────────────
+pyvcf3>=1.0.3             # VCF handling (if applicable)
+pysam>=0.21.0             # SAM/BAM file handling (if applicable)
+
+# ── DATA PROCESSING ───────────────────────────────────────────────────────────
+openpyxl>=3.1.0           # Excel output (results tables)
+xlsxwriter>=3.1.0         # Excel writing with formatting
+tabulate>=0.9.0           # Pretty-print tables in terminal
+
+# ── UTILITIES ─────────────────────────────────────────────────────────────────
+tqdm>=4.65.0              # Progress bars for long-running loops
+colorama>=0.4.6           # Colored terminal output
+requests>=2.31.0          # HTTP requests (NCBI Entrez, if needed)
